@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BizAI | Customers</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="bg-blue-900 text-white shadow-lg">
+
+            <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+                <h1 class="text-2xl font-bold">
+                    BizAI
+                </h1>
+
+                <ul class="flex flex-wrap gap-6 text-sm md:text-base">
+
+                    <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+
+                    <li><a href="customers.html" class="text-yellow-300 font-semibold">Customers</a></li>
+
+                    <li><a href="dashboard.html" class="hover:text-yellow-300">Dashboard</a></li>
+
+                    <li><a href="login.html" class="hover:text-yellow-300">Login</a></li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="max-w-7xl mx-auto px-6 py-10">
+
+        <h1 class="text-4xl font-bold text-blue-900 mb-8">
+
+            Customer Management
+
+        </h1>
+
+        <!-- ================= ADD CUSTOMER FORM ================= -->
+
+        <section class="bg-white shadow-lg rounded-xl p-8 mb-10">
+
+            <h2 class="text-2xl font-semibold text-blue-800 mb-6">
+
+                Add New Customer
+
+            </h2>
+
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div>
+
+                    <label for="name" class="block font-semibold mb-2">
+
+                        Customer Name
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter customer name"
+                        class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none"
+                        required>
+
+                </div>
+
+                <div>
+
+                    <label for="email" class="block font-semibold mb-2">
+
+                        Email Address
+
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="example@gmail.com"
+                        class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none"
+                        required>
+
+                </div>
+
+                <div>
+
+                    <label for="phone" class="block font-semibold mb-2">
+
+                        Phone Number
+
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="+91 9876543210"
+                        class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none">
+
+                </div>
+
+                <div>
+
+                    <label for="city" class="block font-semibold mb-2">
+
+                        City
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="Enter city"
+                        class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none">
+
+                </div>
+
+                <div class="md:col-span-2">
+
+                    <button
+                        type="submit"
+                        class="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-lg">
+
+                        Add Customer
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- ================= CUSTOMER TABLE ================= -->
+
+        <section class="bg-white shadow-lg rounded-xl p-8">
+
+            <h2 class="text-2xl font-semibold text-blue-800 mb-6">
+
+                Customer List
+
+            </h2>
+
+            <div class="overflow-x-auto">
+
+                <table class="min-w-full border border-gray-300">
+
+                    <thead class="bg-blue-800 text-white">
+
+                        <tr>
+
+                            <th class="p-4 text-left">Name</th>
+
+                            <th class="p-4 text-left">Email</th>
+
+                            <th class="p-4 text-left">Phone</th>
+
+                            <th class="p-4 text-left">City</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="border-b hover:bg-gray-100">
+
+                            <td class="p-4">Anita Rao</td>
+
+                            <td class="p-4">anita@shop.in</td>
+
+                            <td class="p-4">9876543210</td>
+
+                            <td class="p-4">Hyderabad</td>
+
+                        </tr>
+
+                        <tr class="border-b hover:bg-gray-100">
+
+                            <td class="p-4">Ravi Kumar</td>
+
+                            <td class="p-4">ravi@store.in</td>
+
+                            <td class="p-4">9123456780</td>
+
+                            <td class="p-4">Bengaluru</td>
+
+                        </tr>
+
+                        <tr class="border-b hover:bg-gray-100">
+
+                            <td class="p-4">Sneha Sharma</td>
+
+                            <td class="p-4">sneha@gmail.com</td>
+
+                            <td class="p-4">9988776655</td>
+
+                            <td class="p-4">Chennai</td>
+
+                        </tr>
+
+                        <tr class="hover:bg-gray-100">
+
+                            <td class="p-4">Rahul Verma</td>
+
+                            <td class="p-4">rahul@yahoo.com</td>
+
+                            <td class="p-4">9871234567</td>
+
+                            <td class="p-4">Mumbai</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-blue-900 text-white text-center py-5 mt-10">
+
+        <p>
+
+            © 2026 BizAI | Customer Management System
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

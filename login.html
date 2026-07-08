@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BizAI | Login</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="bg-blue-900 text-white shadow-lg">
+
+            <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+                <h1 class="text-2xl font-bold">
+                    BizAI
+                </h1>
+
+                <ul class="flex flex-wrap gap-6 text-sm md:text-base">
+
+                    <li>
+                        <a href="index.html" class="hover:text-yellow-300">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="customers.html" class="hover:text-yellow-300">
+                            Customers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="dashboard.html" class="hover:text-yellow-300">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html" class="text-yellow-300 font-semibold">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= LOGIN FORM ================= -->
+
+    <main class="flex items-center justify-center min-h-[80vh] px-4">
+
+        <section class="bg-white shadow-xl rounded-xl w-full max-w-md p-8">
+
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-2">
+
+                Welcome Back
+
+            </h2>
+
+            <p class="text-center text-gray-500 mb-8">
+
+                Login to your BizAI account
+
+            </p>
+
+            <form>
+
+                <!-- Email -->
+
+                <div class="mb-5">
+
+                    <label for="email" class="block mb-2 font-semibold">
+
+                        Email Address
+
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="example@gmail.com"
+                        required
+                        class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none">
+
+                </div>
+
+                <!-- Password -->
+
+                <div class="mb-5">
+
+                    <label for="password" class="block mb-2 font-semibold">
+
+                        Password
+
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                        class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-blue-500 outline-none">
+
+                </div>
+
+                <!-- Remember -->
+
+                <div class="flex justify-between items-center mb-6">
+
+                    <label class="flex items-center gap-2">
+
+                        <input type="checkbox">
+
+                        <span class="text-sm">
+
+                            Remember Me
+
+                        </span>
+
+                    </label>
+
+                    <a href="#" class="text-blue-700 hover:underline text-sm">
+
+                        Forgot Password?
+
+                    </a>
+
+                </div>
+
+                <!-- Login Button -->
+
+                <button
+                    type="submit"
+                    class="w-full bg-blue-700 hover:bg-blue-800 text-white py-3 rounded-lg font-semibold transition">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <!-- Register -->
+
+            <p class="text-center text-gray-600 mt-6">
+
+                Don't have an account?
+
+                <a href="#" class="text-blue-700 font-semibold hover:underline">
+
+                    Register
+
+                </a>
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-blue-900 text-white text-center py-5">
+
+        <p>
+
+            © 2026 BizAI | AI Smart Business Assistant
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

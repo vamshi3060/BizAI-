@@ -1,0 +1,305 @@
+/* ================================
+   BizAI Global Styles
+================================ */
+
+:root{
+
+    --brand:#125E8C;
+    --brand-dark:#0B2A4A;
+    --accent:#0E8A7A;
+    --background:#f4f6f9;
+    --card:#ffffff;
+    --text:#333333;
+    --border:#d0d5dd;
+    --radius:10px;
+
+}
+
+/* ================================
+   Reset
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ================================
+   Body
+================================ */
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.6;
+
+}
+
+/* ================================
+   Navigation
+================================ */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+nav ul{
+
+    list-style:none;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#FFD54F;
+
+}
+
+/* ================================
+   Main
+================================ */
+
+main{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ================================
+   Cards
+================================ */
+
+.card{
+
+    background:var(--card);
+
+    border-radius:var(--radius);
+
+    padding:20px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+    margin-bottom:20px;
+
+}
+
+/* ================================
+   Buttons
+================================ */
+
+button{
+
+    background:var(--brand);
+
+    color:white;
+
+    border:none;
+
+    padding:12px 24px;
+
+    border-radius:var(--radius);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:var(--accent);
+
+}
+
+/* ================================
+   Forms
+================================ */
+
+label{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    font-weight:bold;
+
+}
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    outline:none;
+
+    margin-bottom:18px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:var(--brand);
+
+    box-shadow:0 0 5px rgba(18,94,140,.3);
+
+}
+
+/* ================================
+   Tables
+================================ */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+}
+
+th{
+
+    background:var(--brand-dark);
+
+    color:white;
+
+    text-align:left;
+
+}
+
+th,
+td{
+
+    padding:14px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+/* ================================
+   Images
+================================ */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ================================
+   Footer
+================================ */
+
+footer{
+
+    margin-top:50px;
+
+}
+
+/* ================================
+   Responsive
+================================ */
+
+@media(max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    nav ul{
+
+        display:flex;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:15px;
+
+    }
+
+    h1{
+
+        font-size:28px;
+
+    }
+
+    h2{
+
+        font-size:22px;
+
+    }
+
+    table{
+
+        font-size:14px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    body{
+
+        font-size:15px;
+
+    }
+
+    button{
+
+        width:100%;
+
+    }
+
+    input{
+
+        font-size:16px;
+
+    }
+
+}

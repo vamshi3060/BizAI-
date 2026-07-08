@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BizAI | Products</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="bg-blue-900 text-white shadow-lg">
+
+            <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+                <h1 class="text-2xl font-bold">
+
+                    BizAI
+
+                </h1>
+
+                <ul class="flex flex-wrap gap-6 text-sm md:text-base">
+
+                    <li>
+                        <a href="index.html" class="hover:text-yellow-300">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="customers.html" class="hover:text-yellow-300">
+                            Customers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="dashboard.html" class="hover:text-yellow-300">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="products.html" class="text-yellow-300 font-semibold">
+                            Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html" class="hover:text-yellow-300">
+                            Login
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="max-w-7xl mx-auto px-6 py-10">
+
+        <h1 class="text-4xl font-bold text-blue-900 mb-8">
+
+            Product Management
+
+        </h1>
+
+        <!-- ================= ADD PRODUCT ================= -->
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-10">
+
+            <h2 class="text-2xl font-semibold text-blue-800 mb-6">
+
+                Add New Product
+
+            </h2>
+
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div>
+
+                    <label for="productName" class="block font-semibold mb-2">
+
+                        Product Name
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="productName"
+                        placeholder="Enter product name"
+                        required
+                        class="w-full border rounded-lg p-3">
+
+                </div>
+
+                <div>
+
+                    <label for="category" class="block font-semibold mb-2">
+
+                        Category
+
+                    </label>
+
+                    <select
+                        id="category"
+                        class="w-full border rounded-lg p-3">
+
+                        <option>Electronics</option>
+                        <option>Furniture</option>
+                        <option>Clothing</option>
+                        <option>Food</option>
+
+                    </select>
+
+                </div>
+
+                <div>
+
+                    <label for="price" class="block font-semibold mb-2">
+
+                        Price (₹)
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="price"
+                        placeholder="Enter price"
+                        required
+                        class="w-full border rounded-lg p-3">
+
+                </div>
+
+                <div>
+
+                    <label for="stock" class="block font-semibold mb-2">
+
+                        Stock Quantity
+
+                    </label>
+
+                    <input
+                        type="number"
+                        id="stock"
+                        placeholder="Available stock"
+                        required
+                        class="w-full border rounded-lg p-3">
+
+                </div>
+
+                <div class="md:col-span-2">
+
+                    <button
+                        type="submit"
+                        class="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-lg">
+
+                        Add Product
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- ================= PRODUCT TABLE ================= -->
+
+        <section class="bg-white rounded-xl shadow-lg p-8">
+
+            <h2 class="text-2xl font-semibold text-blue-800 mb-6">
+
+                Product Inventory
+
+            </h2>
+
+            <div class="overflow-x-auto">
+
+                <table class="min-w-full border">
+
+                    <thead class="bg-blue-800 text-white">
+
+                        <tr>
+
+                            <th class="p-4 text-left">Product</th>
+
+                            <th class="p-4 text-left">Category</th>
+
+                            <th class="p-4 text-left">Price</th>
+
+                            <th class="p-4 text-left">Stock</th>
+
+                            <th class="p-4 text-left">Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="border-b hover:bg-gray-100">
+
+                            <td class="p-4">Laptop</td>
+
+                            <td class="p-4">Electronics</td>
+
+                            <td class="p-4">₹65,000</td>
+
+                            <td class="p-4">18</td>
+
+                            <td class="p-4 text-green-600 font-semibold">
+                                Available
+                            </td>
+
+                        </tr>
+
+                        <tr class="border-b hover:bg-gray-100">
+
+                            <td class="p-4">Office Chair</td>
+
+                            <td class="p-4">Furniture</td>
+
+                            <td class="p-4">₹5,200</td>
+
+                            <td class="p-4">10</td>
+
+                            <td class="p-4 text-green-600 font-semibold">
+                                Available
+                            </td>
+
+                        </tr>
+
+                        <tr class="border-b hover:bg-gray-100">
+
+                            <td class="p-4">Bluetooth Speaker</td>
+
+                            <td class="p-4">Electronics</td>
+
+                            <td class="p-4">₹2,500</td>
+
+                            <td class="p-4">0</td>
+
+                            <td class="p-4 text-red-600 font-semibold">
+                                Out of Stock
+                            </td>
+
+                        </tr>
+
+                        <tr class="hover:bg-gray-100">
+
+                            <td class="p-4">Notebook</td>
+
+                            <td class="p-4">Stationery</td>
+
+                            <td class="p-4">₹120</td>
+
+                            <td class="p-4">95</td>
+
+                            <td class="p-4 text-green-600 font-semibold">
+                                Available
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-blue-900 text-white text-center py-5 mt-10">
+
+        <p>
+
+            © 2026 BizAI | Product Management
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
